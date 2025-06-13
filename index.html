@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uber Clone - Book rides easily and track your journey in real-time">
+    <meta name="theme-color" content="#000000">
+    
+    <title>Uber Clone</title>
+    
+    <!-- Favicon -->
+    "https://images.unsplash.com/photo-1697358620639-9be08b320fa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Mzk2MDh8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDk4MTc3OTd8&ixlib=rb-4.1.0&q=80&w=1080"
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Mapbox GL CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'uber-black': '#000000',
+                        'uber-white': '#FFFFFF',
+                        'uber-blue': '#276EF1',
+                        'uber-green': '#05944F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Root element for React -->
+    <div id="root"></div>
+
+    <!-- Loading indicator (shown before React mounts) -->
+    <div id="initial-loader" class="fixed inset-0 flex items-center justify-center bg-white">
+        <img src="https://images.unsplash.com/photo-1719681113330-cec1018bced7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Mzk2MDh8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDk4MTc4MDR8&ixlib=rb-4.1.0&q=80&w=1080" alt="uber loading logo animation" />
+    </div>
+
+    <!-- Mapbox GL JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</body>
+</html>
